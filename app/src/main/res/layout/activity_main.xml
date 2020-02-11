@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CD3DB4A7"
+    android:background="#C8009688"
     tools:context=".MainActivity">
 
     <TextView
@@ -27,7 +27,6 @@
         android:layout_width="338dp"
         android:layout_height="77dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text=" ?"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,6 +56,7 @@
         android:layout_height="67dp"
         android:ems="10"
         android:inputType="number"
+        android:onClick="buttonClick"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,18 +67,20 @@
         app:layout_constraintVertical_bias="0.561" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="195dp"
-        android:layout_height="114dp"
+        android:id="@+id/newgame"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
         android:background="#FFF057"
-        android:onClick="buttonClick"
-        android:text="Guess"
-        android:textSize="30sp"
+        android:onClick="newGame"
+        android:text="New Game"
+        android:textSize="18sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.564" />
 
     <TextView
         android:id="@+id/title"
